@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "599931829bb0babc316fc8c6fbbad7a1",
+    "revision": "3271fd951c3256e5acf8ee720def86d6",
     "url": "/will-energy/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/will-energy/static/css/2.2c28e4d7.chunk.css"
   },
   {
-    "revision": "235bd6e980bb0abedd8f",
+    "revision": "c1de8e57bd8696fb23eb",
     "url": "/will-energy/static/css/main.1be17189.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/will-energy/static/js/2.1235e906.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "235bd6e980bb0abedd8f",
-    "url": "/will-energy/static/js/main.54c6ec9d.chunk.js"
+    "revision": "c1de8e57bd8696fb23eb",
+    "url": "/will-energy/static/js/main.ffb55f6c.chunk.js"
   },
   {
     "revision": "39c04eca798e47f9d4ef",
