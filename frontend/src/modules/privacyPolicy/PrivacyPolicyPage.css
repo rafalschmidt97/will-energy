@@ -1,0 +1,32 @@
+.PrivacyPolicyPage {
+  position: relative;
+  margin-bottom: 334px;
+  & .PrivacyPolicyPage__title {
+    @mixin h3;
+    font-weight: 900;
+    margin: 0 0 8px;
+  }
+
+  & .PrivacyPolicyPage__section {
+    margin-bottom: 80px;
+
+    & .PrivacyPolicyPage__sectionTitle {
+      @mixin h4;
+      margin: 24px 0;
+      font-weight: 700;
+    }
+
+    & p {
+      @mixin b0;
+      font-size: 18px;
+    }
+  }
+
+  & .PrivacyPolicyPage__backgroundImage {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -336px;
+    z-index: 1;
+  }
+}

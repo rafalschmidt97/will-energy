@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@import './static/styles/global.css';
+@import './static/styles/animations.css';
+@import './static/styles/typography.css';

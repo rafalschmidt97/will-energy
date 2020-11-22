@@ -1,0 +1,88 @@
+.ApplicationWizard {
+  @mixin wrapper;
+
+  & .ApplicationWizard__title {
+    @mixin h3;
+    font-weight: 900;
+    margin: 0 0 8px;
+  }
+
+  & .ApplicationWizard__description {
+    @mixin h5;
+    margin: 0 0 80px;
+  }
+
+  & .ant-collapse-item-disabled .ant-collapse-header .ApplicationWizard__panelHeader > div {
+    color: var(--backgroundGreyDarker30Color) !important;
+
+    & svg {
+      stroke: var(--backgroundGreyDarker30Color) !important;
+    }
+  }
+
+  & .ant-collapse-item .ant-collapse-header {
+    background-color: var(--backgroundGreyDarker10Color);
+    padding: 16px 20px;
+    margin-bottom: 8px;
+
+    & .ant-collapse-arrow {
+      display: none !important;
+    }
+
+    & .ApplicationWizard__panelHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & > div {
+        @mixin h4;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+
+        & svg {
+          width: 20px;
+          height: 20px;
+          stroke: var(--textPrimary);
+          margin-right: 42px;
+        }
+      }
+    }
+  }
+
+  & .ant-collapse-content-box {
+    padding: 0;
+  }
+
+  & form {
+    margin-top: 40px;
+  }
+
+  & .ApplicationWizard__subtitle {
+    @mixin h5;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  & input {
+    margin-top: 8px;
+    margin-bottom: 40px;
+  }
+
+  & .Button {
+    height: 48px;
+    width: 100%;
+  }
+
+  & .ApplicationWizard__summary {
+    max-width: 600px;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+
+    .Button {
+      margin-left: auto;
+      width: auto;
+    }
+  }
+}

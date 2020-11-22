@@ -1,0 +1,42 @@
+.ContactPage {
+  height: 100vh;
+
+  & .ContactPage__title {
+    @mixin h3;
+    font-weight: 900;
+    margin: 0 0 8px;
+  }
+
+  & .ContactPage__description {
+    @mixin b0;
+    margin-bottom: 80px;
+  }
+
+  & .ContactPage__form {
+    & input,
+    textarea,
+    .ant-checkbox-wrapper {
+      z-index: 5;
+      margin-top: 8px;
+      margin-bottom: 40px;
+    }
+
+    & .Button {
+      height: 48px;
+      width: 100%;
+      z-index: 5;
+    }
+  }
+
+  & .ContantPage__policy {
+    z-index: 5;
+  }
+
+  & .ContactPage__backgroundImage {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -155px;
+    z-index: 1;
+  }
+}

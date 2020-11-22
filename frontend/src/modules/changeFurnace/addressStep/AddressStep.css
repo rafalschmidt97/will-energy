@@ -1,0 +1,32 @@
+.AddressStep {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 295px);
+
+  & .AddressStep__messageImage {
+    display: block;
+    width: 100%;
+    margin: 24px 0 -12px;
+  }
+
+  & .AddressStep__title {
+    @mixin h3;
+    font-weight: 900;
+    margin: 0 0 8px;
+  }
+
+  & .AddressStep__description {
+    @mixin b0;
+    margin-bottom: 124px;
+  }
+
+  & .Consent {
+    margin-bottom: 25px;
+  }
+
+  & .Button {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,180 @@
+.CalculatorStep {
+  & .CalculatorStep__message {
+    position: relative;
+    min-height: calc(100vh - 304px);
+    padding-bottom: 350px;
+    z-index: 5;
+
+    & .CalculatorStep__messageImage {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      pointer-events: none;
+      margin-bottom: -4px;
+    }
+
+    & .CalculatorStep__messageTitle {
+      @mixin h3;
+      font-weight: 900;
+      margin: 0 0 8px;
+    }
+
+    & .CalculatorStep__messageSubTitle {
+      @mixin h4;
+      font-weight: 700;
+      margin: 64px 0 24px;
+    }
+
+    & .CalculatorStep__messageDescription {
+      @mixin b0;
+    }
+  }
+
+  & .CalculatorStep__messageFooter {
+    @mixin fullWidthBackground var(--backgroundDark);
+    background-color: var(--backgroundDark);
+    height: 40px;
+    z-index: 2;
+    margin-bottom: 40px;
+  }
+
+  & .CalculatorStep__calculator {
+    & .CalculatorStep__buildingArea {
+      margin-bottom: 72px;
+    }
+
+    & .CalculatorStep__heatingType {
+      margin-bottom: 80px;
+
+      & button {
+        @mixin b1;
+        width: 100%;
+        background-color: var(--backgroundGreyColor);
+        border-color: var(--backgroundGreyColor);
+        border-radius: none;
+        color: var(--textPrimary);
+        font-weight: 700;
+
+        &:hover {
+          background-color: var(--backgroundGreyDarker20Color);
+          border-color: var(--backgroundGreyDarker20Color);
+        }
+
+        &:focus {
+          border: 1px solid var(--primaryBlueDarker);
+        }
+
+        &.Button--active {
+          color: var(--primaryBlue);
+          border: 2px solid var(--primaryBlue);
+          border-radius: 4px;
+        }
+      }
+
+      & .CalculatorStep__heatingTypeElement {
+        @mixin aspectRatio 96/202;
+
+        & .CalculatorStep__heatingDate {
+          @mixin tag;
+          font-weight: 400;
+          display: block;
+        }
+      }
+    }
+
+    & .CalculatorStep__chart {
+      & .CalculatorStep__chartTitle {
+        @mixin h4;
+        text-align: center;
+        font-weight: 700;
+        margin: 0 0 24px;
+      }
+
+      & .CalculatorStep__chartDescription {
+        @mixin b1;
+        text-align: center;
+        font-weight: 700;
+        margin: 24px 0 0;
+      }
+    }
+  }
+
+  & .CalculatorStep__calculatorMessage {
+    @mixin fullWidthBackground var(--backgroundGreyDarker10Color);
+    background-color: var(--backgroundGreyDarker10Color);
+
+    & .CalculatorStep__calculatorMessageInner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      z-index: 2;
+      padding: 120px 0;
+      margin-top: 120px;
+
+      & h2 {
+        @mixin h4;
+        font-weight: 700;
+        margin: 0 0 24px;
+      }
+
+      & p {
+        @mixin b2;
+        margin: 0 0 64px;
+      }
+
+      & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 312px;
+        height: 48px;
+        align-self: flex-end;
+        font-size: 17px;
+
+        & svg {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.CalculatorStep__estimatedPrice {
+  width: 100%;
+  padding-bottom: 88px;
+  border-bottom: 1px solid var(--backgroundGreyDarker20Color);
+  margin-bottom: 80px;
+
+  &.CalculatorStep__messageEstimatedPrice {
+    padding: 0;
+    border: 0;
+    margin-bottom: 100px;
+  }
+
+  & span {
+    @mixin b1;
+    text-transform: uppercase;
+    color: var(--primaryBlue);
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  & h2 {
+    @mixin h4;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  & p {
+    @mixin tag;
+    color: var(--textTertiary);
+    margin: 0 0 24px;
+  }
+
+  & h3 {
+    @mixin h3;
+    font-weight: 900;
+    margin: 0;
+  }
+}
